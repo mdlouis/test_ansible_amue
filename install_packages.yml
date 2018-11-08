@@ -1,4 +1,5 @@
 - name: playbook used to check if some packages are installed
+  hosts: all
   tasks:
     - name: check if wget and openssl is installed
       yum: 
