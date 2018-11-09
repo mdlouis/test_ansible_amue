@@ -3,9 +3,8 @@
   tasks:
     - name: check if wget and openssl is installed
       yum: 
-        name: "{{ item }}"
-        state: present
-      with_items: 
-        - openssl
-        - wget
+        name:
+          - openssl
+          - wget
+
 
